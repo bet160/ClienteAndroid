@@ -9,6 +9,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".RegistroCanciones">
+        </activity>
+        <activity android:name=".RegistrarAlbum">
+        </activity>
+        <activity android:name=".InicioCreadorContenido">
+        </activity>
+        <activity android:name=".RegistrarArtista">
+        </activity>
         <activity android:name=".MenuPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
