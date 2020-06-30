@@ -18,7 +18,7 @@
             android:textColor="#FFFFFF"/>
     <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/botonVolver"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/botonV"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.044"
@@ -32,12 +32,12 @@
             app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.874"
             android:onClick="canciones"/>
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/ic_launcher_foreground"
-            android:id="@+id/imageView5"
+            android:layout_width="131dp"
+            android:layout_height="130dp" app:srcCompat="@drawable/ic_launcher_foreground"
+            android:id="@+id/imagenAlbum"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.488" app:layout_constraintVertical_bias="0.12"/>
+            app:layout_constraintHorizontal_bias="0.825" app:layout_constraintVertical_bias="0.128"/>
     <TextView
             android:text="Nombre"
             android:layout_width="wrap_content"
@@ -93,4 +93,12 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.381" app:layout_constraintVertical_bias="0.701"/>
+    <Button
+            android:text="Cargar imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/cargarImagen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.184"
+            app:layout_constraintVertical_bias="0.171" android:onClick="cargarImagen"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

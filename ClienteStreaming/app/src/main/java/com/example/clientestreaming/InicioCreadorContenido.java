@@ -19,6 +19,7 @@ public class InicioCreadorContenido extends AppCompatActivity {
     private ImageButton volver;
     private Button album;
     private ImageButton boton;
+    private Button listaReproduccion;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +31,9 @@ public class InicioCreadorContenido extends AppCompatActivity {
         window.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#494949")));
         window.setNavigationBarColor(Color.parseColor("#43a074"));
         artista=(Button)findViewById(R.id.registroArtista);
-        volver=(ImageButton) findViewById(R.id.botonVolver);
+        volver=(ImageButton) findViewById(R.id.botonV);
         album=(Button)findViewById(R.id.registroAlbum);
+        listaReproduccion=(Button)findViewById(R.id.lista);
     }
 
     public void registroArtista(View view){
@@ -41,6 +43,11 @@ public class InicioCreadorContenido extends AppCompatActivity {
 
     public void registroAlbum(View view){
         Intent siguiente = new Intent(this,RegistrarAlbum.class);
+        startActivity(siguiente);
+    }
+
+    public void listaReproduccion(View view){
+        Intent siguiente = new Intent(this,ListaReproduccion.class);
         startActivity(siguiente);
     }
 }

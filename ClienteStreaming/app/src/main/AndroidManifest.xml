@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".ListaReproduccion">
+        </activity>
         <activity android:name=".RegistroCanciones">
         </activity>
         <activity android:name=".RegistrarAlbum">

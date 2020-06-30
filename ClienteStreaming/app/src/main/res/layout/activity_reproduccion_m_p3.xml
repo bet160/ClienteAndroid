@@ -13,7 +13,7 @@
             android:id="@+id/reproductor"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:onClick="reproducir" app:layout_constraintHorizontal_bias="0.498"
+            android:onClick="reproducir" app:layout_constraintHorizontal_bias="0.63"
             app:layout_constraintVertical_bias="0.758"/>
     <ImageButton
             android:layout_width="71dp"
@@ -21,7 +21,7 @@
             android:id="@+id/adelantarAudio"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.75" app:layout_constraintVertical_bias="0.761"
+            app:layout_constraintHorizontal_bias="0.879" app:layout_constraintVertical_bias="0.761"
             android:onClick="cambiar"/>
     <ImageButton
             android:layout_width="71dp"
@@ -29,7 +29,7 @@
             android:id="@+id/atrasarAudio"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.247" app:layout_constraintVertical_bias="0.761"
+            app:layout_constraintHorizontal_bias="0.085" app:layout_constraintVertical_bias="0.761"
             android:onClick="atrasarAudio"/>
     <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
@@ -49,7 +49,7 @@
             app:layout_constraintVertical_bias="0.574"/>
     <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/botonVolver"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/botonV"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.079"
@@ -61,4 +61,27 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.474" app:layout_constraintVertical_bias="0.238"/>
+    <ImageButton
+            android:layout_width="86dp"
+            android:layout_height="72dp" app:srcCompat="@android:drawable/ic_media_pause"
+            android:id="@+id/pausar"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.344" app:layout_constraintVertical_bias="0.758"
+            android:onClick="pausar"/>
+    <Button
+            android:text="Descargar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.86"/>
+    <Button
+            android:text="Agregar a lista de reproducción"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button5"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.496" app:layout_constraintVertical_bias="0.959"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

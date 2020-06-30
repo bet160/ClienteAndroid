@@ -35,7 +35,7 @@
             app:layout_constraintHorizontal_bias="0.267" app:layout_constraintVertical_bias="0.263"/>
     <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/botonVolver"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/botonV"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.044"
@@ -78,16 +78,24 @@
             app:layout_constraintHorizontal_bias="0.267" app:layout_constraintVertical_bias="0.596"/>
     <Button
             android:text="Agregar otra canción"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button"
+            android:layout_width="143dp"
+            android:layout_height="51dp" android:id="@+id/button"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.497" app:layout_constraintVertical_bias="0.737"/>
+            app:layout_constraintHorizontal_bias="0.138" app:layout_constraintVertical_bias="0.85"/>
     <Button
             android:text="Terminar proceso"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/button3"
+            android:layout_width="153dp"
+            android:layout_height="55dp" android:id="@+id/button3"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.85"/>
+            app:layout_constraintHorizontal_bias="0.828" app:layout_constraintVertical_bias="0.85"/>
+    <Button
+            android:text="Seleccionar canción"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/seleccionCancion"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.452" app:layout_constraintVertical_bias="0.714"
+            android:onClick="cargarAudio"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

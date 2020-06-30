@@ -23,18 +23,18 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.114"
-            app:layout_constraintVertical_bias="0.303" android:onClick="registroArtista"/>
+            app:layout_constraintVertical_bias="0.251" android:onClick="registroArtista"/>
     <Button
             android:text="Registrar Álbum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/registroAlbum"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.893" app:layout_constraintVertical_bias="0.303"
+            app:layout_constraintHorizontal_bias="0.825" app:layout_constraintVertical_bias="0.25"
             android:onClick="registroAlbum"/>
     <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/botonVolver"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/abc_vector_test" android:id="@+id/botonV"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.079"
@@ -54,4 +54,18 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.457" app:layout_constraintVertical_bias="0.128"/>
+    <Button
+            android:text="Listas de reproducción"
+            android:layout_width="153dp"
+            android:layout_height="63dp" android:id="@+id/lista"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.114" app:layout_constraintVertical_bias="0.354"
+            android:onClick="listaReproduccion"/>
+    <ListView
+            android:layout_width="317dp"
+            android:layout_height="332dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.907"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
