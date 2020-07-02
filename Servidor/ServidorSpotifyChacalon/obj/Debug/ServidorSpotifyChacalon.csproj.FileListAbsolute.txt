@@ -1,0 +1,22 @@
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\bin\Debug\ServidorSpotifyChacalon.dll.config
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\bin\Debug\ServidorSpotifyChacalon.dll
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\bin\Debug\ServidorSpotifyChacalon.pdb
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.csprojAssemblyReference.cache
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.csproj.CoreCompileInputs.cache
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.dll
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.pdb
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\bin\Debug\AccesoBD.dll
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\bin\Debug\AccesoBD.pdb
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\bin\Debug\AccesoBD.dll.config
+C:\Users\BETO\Documents\OCTAVO SEMESTRE\DESARROLLO DE APLICACIONES\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.csproj.CopyComplete
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\bin\Debug\ServidorSpotifyChacalon.dll.config
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\bin\Debug\ServidorSpotifyChacalon.dll
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\bin\Debug\ServidorSpotifyChacalon.pdb
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\bin\Debug\AccesoBD.dll
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\bin\Debug\AccesoBD.pdb
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\bin\Debug\AccesoBD.dll.config
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.csprojAssemblyReference.cache
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.csproj.CoreCompileInputs.cache
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.csproj.CopyComplete
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.dll
+C:\Users\javie\Desktop\Servidor\ServidorSpotifyChacalon\obj\Debug\ServidorSpotifyChacalon.pdb
