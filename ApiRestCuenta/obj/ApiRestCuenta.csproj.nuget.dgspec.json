@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\javie\\Desktop\\APIRest-master\\ApiRestCuenta\\ApiRestCuenta.csproj": {}
+    "C:\\Users\\javie\\Desktop\\ProyectoAplicaciones\\ClienteAndroid\\ApiRestCuenta\\ApiRestCuenta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\javie\\Desktop\\APIRest-master\\ApiRestCuenta\\ApiRestCuenta.csproj": {
+    "C:\\Users\\javie\\Desktop\\ProyectoAplicaciones\\ClienteAndroid\\ApiRestCuenta\\ApiRestCuenta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\javie\\Desktop\\APIRest-master\\ApiRestCuenta\\ApiRestCuenta.csproj",
+        "projectUniqueName": "C:\\Users\\javie\\Desktop\\ProyectoAplicaciones\\ClienteAndroid\\ApiRestCuenta\\ApiRestCuenta.csproj",
         "projectName": "ApiRestCuenta",
-        "projectPath": "C:\\Users\\javie\\Desktop\\APIRest-master\\ApiRestCuenta\\ApiRestCuenta.csproj",
+        "projectPath": "C:\\Users\\javie\\Desktop\\ProyectoAplicaciones\\ClienteAndroid\\ApiRestCuenta\\ApiRestCuenta.csproj",
         "packagesPath": "C:\\Users\\javie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\javie\\Desktop\\APIRest-master\\ApiRestCuenta\\obj\\",
+        "outputPath": "C:\\Users\\javie\\Desktop\\ProyectoAplicaciones\\ClienteAndroid\\ApiRestCuenta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\javie\\AppData\\Roaming\\NuGet\\NuGet.Config",

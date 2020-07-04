@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Yo/UAroebJtlu/yBLazFWqIrr0+KeJ1CyQxfO05Z/gcF2u5Hft/fn5qgREuWNIt/zhq7ASpzPNuBF9GZr8DwQ==",
+  "dgSpecHash": "JhjsQJCCeIbLKyLmkezDa10n8OCh2jRSfsXIwbVwnTDF8+8HOhxgS23apkulq/2qtnNewpP3El0ea4wfx0NH2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\javie\\Desktop\\APIRest-master\\ApiRestCuenta\\ApiRestCuenta.csproj",
+  "projectFilePath": "C:\\Users\\javie\\Desktop\\ProyectoAplicaciones\\ClienteAndroid\\ApiRestCuenta\\ApiRestCuenta.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\javie\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\javie\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
