@@ -1,10 +1,14 @@
 package com.example.clientestreaming;
 
+import ProtoGrpc.AudioStreamGrpc;
+import ProtoGrpc.AudioStreaming;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
+import android.net.rtp.AudioStream;
+import android.os.Build;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.Window;
@@ -13,8 +17,12 @@ import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
+import io.grpc.stub.StreamObserver;
 
 public class ReproduccionMP3 extends AppCompatActivity {
 
@@ -29,6 +37,10 @@ public class ReproduccionMP3 extends AppCompatActivity {
     private ImageButton guardarCancion;
     private Button listaReproduccion;
     MediaPlayer mp;
+    private ManagedChannel canal;
+    private AudioStreamGrpc.AudioStreamStub stub;
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +60,31 @@ public class ReproduccionMP3 extends AppCompatActivity {
         tiempoAudio=(TextView)findViewById(R.id.tiempoAudio);
         pausar=(ImageButton)findViewById(R.id.pausar);
 
+    }
+
+    public  void  ObtenerAudioFormat(){
+        canal = ManagedChannelBuilder.forAddress("https://localhost:",5000).usePlaintext().build();
+        stub = AudioStreamGrpc.newStub(canal);
+        final ProtoGrpc.AudioStreaming.Cancion nombreCancion = ProtoGrpc.AudioStreaming.Cancion.newBuilder()
+                .setNombre("adasd")
+                .build();
+
+        stub.elegirCancion(nombreCancion, new StreamObserver<AudioStreaming.AudioFormat>() {
+            @Override
+            public void onNext(AudioStreaming.AudioFormat value) {
+
+            }
+
+            @Override
+            public void onError(Throwable t) {
+
+            }
+
+            @Override
+            public void onCompleted() {
+
+            }
+        });
     }
 
     public void reproducir(View view){

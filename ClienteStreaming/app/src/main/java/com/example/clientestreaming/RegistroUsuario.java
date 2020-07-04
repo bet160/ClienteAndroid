@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.Window;
 import android.widget.*;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -17,6 +19,7 @@ public class RegistroUsuario extends AppCompatActivity {
     private Window window;
     ImageButton cancelar;
     ImageView imagen;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
