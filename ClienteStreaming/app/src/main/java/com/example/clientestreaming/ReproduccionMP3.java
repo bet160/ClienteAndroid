@@ -6,6 +6,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -15,6 +16,13 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import com.example.streaming.AudioFormat;
+import com.example.streaming.AudioSample;
+import com.example.streaming.AudioStreamGrpc;
+import com.example.streaming.Cancion;
+import io.grpc.ManagedChannel;
+import io.grpc.ManagedChannelBuilder;
+import io.grpc.stub.StreamObserver;
 
 public class ReproduccionMP3 extends AppCompatActivity {
 
@@ -29,6 +37,10 @@ public class ReproduccionMP3 extends AppCompatActivity {
     private ImageButton guardarCancion;
     private Button listaReproduccion;
     MediaPlayer mp;
+
+    private ManagedChannel canal;
+    private AudioStreamGrpc.AudioStreamStub stub;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +59,49 @@ public class ReproduccionMP3 extends AppCompatActivity {
         atrasar=(ImageButton)findViewById(R.id.atrasarAudio);
         tiempoAudio=(TextView)findViewById(R.id.tiempoAudio);
         pausar=(ImageButton)findViewById(R.id.pausar);
+
+    }
+
+    public void ObtenerAudioFormatDeCancion(){
+
+        canal = ManagedChannelBuilder.forAddress("192.168.1.74", 5001).usePlaintext().build();
+        stub = AudioStreamGrpc.newStub(canal);
+
+        final Cancion cancion = Cancion.newBuilder().setNombre("Fluorescent Adolescent.wav").build();
+
+        stub.elegirCancion(cancion, new StreamObserver<AudioFormat>() {
+            @Override
+            public void onNext(AudioFormat value) {
+                AudioFormat formato = value;
+            }
+
+            @Override
+            public void onError(Throwable t) {
+                Log.e("ERROR", t.getMessage());
+            }
+
+            @Override
+            public void onCompleted() {
+
+            }
+        });
+
+        stub.obtenerStreamDeCancion(cancion, new StreamObserver<AudioSample>() {
+            @Override
+            public void onNext(AudioSample value) {
+
+            }
+
+            @Override
+            public void onError(Throwable t) {
+                Log.e("ERROR", t.getMessage());
+            }
+
+            @Override
+            public void onCompleted() {
+
+            }
+        });
 
     }
 
